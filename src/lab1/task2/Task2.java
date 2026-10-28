@@ -1,5 +1,4 @@
-package lab1;
-
+package lab1.task2;
 import java.util.Scanner;
 
 public class Task2 {
