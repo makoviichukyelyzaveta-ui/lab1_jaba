@@ -6,7 +6,7 @@ public class Task3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("=== Завдання 3 (Варіант 9) ===");
+        System.out.println("Завдання 3 (Варіант 9)");
         System.out.print("Введіть розмірність матриці n (n <= 15): ");
         int n = scanner.nextInt();
 
@@ -32,8 +32,6 @@ public class Task3 {
             }
             System.out.println();
         }
-
-        // 1. Пошук рядків із однаковими елементами
         System.out.println("\nРядки, у яких всі елементи однакові:");
         boolean foundRow = false;
         for (int i = 0; i < n; i++) {
@@ -52,8 +50,6 @@ public class Task3 {
         if (!foundRow) {
             System.out.println("Таких рядків немає.");
         }
-
-        // 2. Пошук стовпчиків із всіма парними елементами
         System.out.println("\nСтовпчики, у яких всі елементи парні:");
         boolean foundCol = false;
         for (int j = 0; j < n; j++) {

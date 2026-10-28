@@ -5,9 +5,7 @@ public class Task2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(" ЗАВДАННЯ 2");
-
-        // --- ВАРІАНТ 1: Вхідні double, результат double ---
-        System.out.println("\n--- Варіант 1 (double -> double) ---");
+        System.out.println("\nВаріант 1 (double -> double)");
         System.out.print("Введіть розмір масиву n: ");
         int n1 = scanner.nextInt();
         double[] a1 = new double[n1];
@@ -15,9 +13,7 @@ public class Task2 {
         for (int i = 0; i < n1; i++) a1[i] = scanner.nextDouble();
 
         processArrayDouble(a1);
-
-        // --- ВАРІАНТ 2: Вхідні int, результат double ---
-        System.out.println("\n--- Варіант 2 (int -> double) ---");
+        System.out.println("\nВаріант 2 (int -> double)");
         System.out.print("Введіть розмір масиву n: ");
         int n2 = scanner.nextInt();
         int[] a2 = new int[n2];
@@ -25,9 +21,7 @@ public class Task2 {
         for (int i = 0; i < n2; i++) a2[i] = scanner.nextInt();
 
         processArrayIntToDouble(a2);
-
-        // --- ВАРІАНТ 3: Вхідні double, результат int ---
-        System.out.println("\n--- Варіант 3 (double -> int) ---");
+        System.out.println("\nВаріант 3 (double -> int)");
         System.out.print("Введіть розмір масиву n: ");
         int n3 = scanner.nextInt();
         double[] a3 = new double[n3];
@@ -38,8 +32,6 @@ public class Task2 {
 
         scanner.close();
     }
-
-    // Метод для Варіанту 1
     private static void processArrayDouble(double[] arr) {
         int first = -1, last = -1;
         for (int i = 0; i < arr.length; i++) {
@@ -57,8 +49,6 @@ public class Task2 {
             System.out.printf("Сума (double): %.4f\n", sum);
         }
     }
-
-    // Метод для Варіанту 2
     private static void processArrayIntToDouble(int[] arr) {
         int first = -1, last = -1;
         for (int i = 0; i < arr.length; i++) {
@@ -76,8 +66,6 @@ public class Task2 {
             System.out.printf("Сума (double): %.4f\n", sum);
         }
     }
-
-    // Метод для Варіанту 3
     private static void processArrayDoubleToInt(double[] arr) {
         int first = -1, last = -1;
         for (int i = 0; i < arr.length; i++) {
